@@ -1,0 +1,12 @@
+.card-portofolio:hover .img-portofolio{
+    animation: img-portofolio 1s both ease-in-out;
+}
+
+@keyframes img-portofolio {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.2;
+    }
+}

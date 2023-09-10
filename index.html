@@ -28,6 +28,8 @@
   <script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
   <script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
   <script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
+  <!-- Dysania -->
+  <link rel="stylesheet" href="app/css/animation.css">
   <style>
     .banner {
       background-color: rgb(251, 251, 251);
@@ -42,7 +44,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky text-start" style="top: 0; z-index: 9;">
+  <nav id="dysaniaNavbar" class="navbar navbar-expand-lg bg-body-tertiary position-sticky text-start" style="top: 0; z-index: 9;">
     <div class="container-fluid">
       <a class="navbar-brand ps-3" href="#">
         <img src="assets/img/logo_mini.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
@@ -58,10 +60,10 @@
             <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#"><b>Layanan</b></a>
+            <a class="nav-link" href="#sectionLayanan"><b>Layanan</b></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#"><b>Projek</b></a>
+            <a class="nav-link" href="#sectionProject"><b>Projek</b></a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="#"><b>Tentang Kami</b></a>
@@ -80,8 +82,8 @@
     </h1>
   </div>
   <div class="container">
-    <section id="sectionHome" class="home">
-      <div class="row">
+    <section id="sectionLayanan" class="home">
+      <!-- <div class="row">
         <div class="col">
           <h3>Ini heading home</h3>
           <h1>
@@ -90,41 +92,151 @@
             covered. (Pengenalan perusahaan)
           </h1>
         </div>
-      </div>
-      <div class="row border min-vh-100">
-        <div class="col-6 border">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi 
-          voluptas?
-        </div>
-        <div class="col-6 border">
-          <img src="./assets/img/logo_dark.png" id="imgs" class="img-fluid" alt="..." />
-        </div>
-      </div>
-      <div class="row border min-vh-100">
-        <div class="col-6 border">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-          architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-          voluptas?
-        </div>
-        <div class="col-6 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+      </div> -->
+      <div class="min-vh-100 d-flex">
+        <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-md-6">
+            <b>Judul Pengenalan</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad
+            quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
+            voluptas?
+          </div>
+          <div class="col-md-6">
+            <b>Deskripsi singkat perusahaan</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet quo ipsa? A, totam quisquam? Corrupti hic velit nisi iusto at modi aperiam facilis, rerum, eum quod repellendus deserunt dolore!  
+          </div>
         </div>
       </div>
-      <div class="row border">
-        <div class="col-6 border">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-          architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-          voluptas?
+      <div class="row min-vh-100 pt-3">
+        <div class="col-md-6" data-aos="zoom-out-right" data-aos-duration="1000">
+          <h3>Layanan Kami</h3>
         </div>
-        <div class="col-6 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        <div class="col-md-6">
+          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="row">
+              <div class="col-2">
+                <h1><i class="fa-solid fa-house"></i></h1>
+              </div>
+              <div class="col-10">
+                <h1 style="line-height: 1;"><b>Web Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <div class="row">
+              <div class="col-2">
+                <h1><i class="fa-solid fa-house"></i></h1>
+              </div>
+              <div class="col-10">
+                <h1><b>Android Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+              </div>
+            </div>
+          </div>
+          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+            <div class="row">
+              <div class="col-2">
+                <h1><i class="fa-solid fa-house"></i></h1>
+              </div>
+              <div class="col-10">
+                <h1><b>Desktop Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-vh-100">
+        <div class="mb-5 pb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h6>01</h6>
+              <h1><b>Web Development</b></h1>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+              <h5 class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Excepturi autem corrupti cum quibusdam
+                error veritatis saepe accusamus corporis. Quam voluptate cupiditate earum explicabo ipsam delectus optio cum amet.</h5>
+              <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 1</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 2</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 3</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 4</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 pt-5 pb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h6>02</h6>
+              <h1><b>Android Development</b></h1>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+              <h5 class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Excepturi autem corrupti cum quibusdam
+                error veritatis saepe accusamus corporis. Quam voluptate cupiditate earum explicabo ipsam delectus optio cum amet.</h5>
+              <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 1</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 2</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 3</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 4</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5 pt-5 pb-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h6>03</h6>
+              <h1><b>Dekstop Development</b></h1>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500">
+              <h5 class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ipsum. Excepturi autem corrupti cum quibusdam
+                error veritatis saepe accusamus corporis. Quam voluptate cupiditate earum explicabo ipsam delectus optio cum amet.</h5>
+              <div class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 1</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 2</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 3</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+                <div class="col-md-6 mb-3">
+                  <h5 class="mb-2"><b>Heading 4</b></h5>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio, at totam quasi suscipit molestiae quaerat sapiente perferendis sint nulla harum ipsum temporibus hic voluptas sunt, repellat ratione, officiis unde!
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="Layanan">
-      <div class="row border">
+      <div class="row">
         <div class="col text-center">
           <h1>Ini konten Layanan</h1>
         </div>
@@ -143,35 +255,13 @@
         </div>
       </div>
     </section>
-    <section class="Project">
+    <section id="sectionProject" class="Project min-vh-100 mb-4 section">
       <div class="row">
         <div class="col mb-2">
           <h1>Ini Heading Project</h1>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
-        </div>
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
-        </div>
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
-        </div>
-        <div class="col-6 mb-2">
-          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
-        </div>
+      <div id="rowPortofolio" class="row text-center">
       </div>
     </section>
     <section class="Tentang kami">
@@ -224,10 +314,10 @@
     </div>
   </div>
   <!-- End Sosmed Icon -->
-  <script src="app/sys.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="app/js/sys.js"></script>
 </body>
 </body>
 
