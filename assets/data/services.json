@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "img" : "service1.png",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+    },
+    {
+        "id" : 2,
+        "img" : "20230406_062028.jpg",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+    },
+    {
+        "id" : 3,
+        "img" : "service2.png",
+        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+    }
+]

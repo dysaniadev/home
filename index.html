@@ -1,365 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/img/logo_mini_transparent.png"
-    />
-    <title>Dysania</title>
-  </head>
-  <body>
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Bootstrap demo</title>
-      <!-- Jquery -->
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
-      <!-- Boostrap -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"
-      ></script>
-      <!-- AOS -->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <!-- Fontawesome -->
-      <link
-        rel="stylesheet"
-        href="vendor/fontawesome/6.4.2/css/brands.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="vendor/fontawesome/6.4.2/css/solid.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="vendor/fontawesome/6.4.2/css/fontawesome.min.css"
-      />
-      <script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
-      <script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
-      <script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
-      <style>
-        .banner {
-          background-color: rgb(251, 251, 251);
-          height: 800px;
-          background-size: cover;
-          text-align: center;
-          border: 1px solid black;
-          color: #000;
-          font-size: 80px;
-          padding: 100px 0;
-        }
-      </style>
-    </head>
 
-    <body>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand ps-3" href="#">
-            <img
-              src="assets/img/logo_mini.png"
-              alt="Logo"
-              width="30"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
-            <img
-              src="assets/img/logo_light_transparent.png"
-              alt="Logo"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#"
-                  ><b>Home</b></a
-                >
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#"><b>Layanan</b></a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#"><b>Projek</b></a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#"><b>Tentang Kami</b></a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#"><b>Pemesanan</b></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
-      <div class="banner d-flex">
-        <h1 class="align-content-center m-auto">
-          Design, Development, Maintenance
-        </h1>
-      </div>
-      <div class="container">
-        <section class="home">
-          <div class="row border">
-            <div class="col">
-              <h3>Ini heading home</h3>
-              <h1>
-                From proof of concepts (PoC) and minimum viable products (MVP)
-                to complex enterprise-level systems – we’ve got everything
-                covered.
-              </h1>
-            </div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-        </section>
-        <section class="Layanan">
-          <div class="row border">
-            <div class="col text-center">
-              <h1>Ini konten Layanan</h1>
-            </div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">ini foto</div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">ini konten</div>
-          </div>
-          <div class="row border">
-            <div class="col-6 border">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
-              architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-              voluptas?
-            </div>
-            <div class="col-6 border">ini konten</div>
-          </div>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/img/logo_mini_transparent.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/brands.min.css" />
+  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/solid.min.css" />
+  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/fontawesome.min.css" />
+  <script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
+  <script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
+  <script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
+  <style>
+    .banner {
+      background-color: rgb(251, 251, 251);
+      background-size: cover;
+      text-align: center;
+      /* border: 1px solid black; */
+      color: #000;
+    }
+  </style>
+  <title>Dysania</title>
+</head>
 
-        <section class="Project">
-          <div class="row border">
-            <div class="col">
-              <h1>Ini Heading Project</h1>
-            </div>
-          </div>
-          <div class="row border text-center">
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="row border text-center">
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="row border text-center" >
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-6 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-        </section>
-        <section class="Tentang kami">
-          <div class="row border">
-            <div class="col">
-              <h4>About</h4>
-              <h1>
-                We design and develop web and mobile apps for startups, small
-                and medium businesses
-              </h1>
-            </div>
-          </div>
-          <div class="row border">
-            <div class="col border">
-              <img
-                src="./assets/img/about-top.webp"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="row border">
-            <h3>
-              We like to see our clients as partners and we do our best to
-              deliver the product they and their users are 100% satisfied with.
-              Agile principles, ongoing communication, transparency are the
-              cornerstones of each of our projects.
-            </h3>
-            <div class="col-3 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-3 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-3 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="col-3 border">
-              <img
-                src="./assets/img/logo_dark.png"
-                class="img-fluid"
-                alt="..."
-              />
-            </div>
-          </div>
-        </section>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky text-start" style="top: 0; z-index: 9;">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-3" href="#">
+        <img src="assets/img/logo_mini.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+        <img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#"><b>Layanan</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#"><b>Projek</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#"><b>Tentang Kami</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#"><b>Pemesanan</b></a>
+          </li>
+        </ul>
       </div>
-      <!-- Sosmed Icon -->
-      <div
-        class="position-fixed ms-2 mb-3 ps-3 d-none d-md-block"
-        style="bottom: 0"
-      >
-        <div
-          class="p-2 rounded-circle d-flex mb-1 text-white"
-          style="background: #000; width: 30px; height: 30px"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div
-          class="p-2 rounded-circle d-flex mb-1 text-white"
-          style="background: #000; width: 30px; height: 30px"
-        >
-          <i class="fa-brands fa-facebook-f m-auto"></i>
-        </div>
-        <div
-          class="p-2 rounded-circle d-flex mb-1 text-white"
-          style="background: #000; width: 30px; height: 30px"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div id="sectionBanner" class="banner min-vh-100 d-flex flex-column">
+    <h1 class="align-content-center m-auto">
+      Design, Development, Maintenance
+    </h1>
+  </div>
+  <div class="container">
+    <section id="sectionHome" class="home">
+      <div class="row">
+        <div class="col">
+          <h3>Ini heading home</h3>
+          <h1>
+            From proof of concepts (PoC) and minimum viable products (MVP)
+            to complex enterprise-level systems – we’ve got everything
+            covered. (Pengenalan perusahaan)
+          </h1>
         </div>
       </div>
-      <!-- End Sosmed Icon -->
-      <script>
-        AOS.init();
-      </script>
-    </body>
-  </body>
+      <div class="row border min-vh-100">
+        <div class="col-6 border">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi 
+          voluptas?
+        </div>
+        <div class="col-6 border">
+          <img src="./assets/img/logo_dark.png" id="imgs" class="img-fluid" alt="..." />
+        </div>
+      </div>
+      <div class="row border min-vh-100">
+        <div class="col-6 border">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
+          architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
+          voluptas?
+        </div>
+        <div class="col-6 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+      </div>
+      <div class="row border">
+        <div class="col-6 border">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam
+          architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
+          voluptas?
+        </div>
+        <div class="col-6 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+      </div>
+    </section>
+    <section class="Layanan">
+      <div class="row border">
+        <div class="col text-center">
+          <h1>Ini konten Layanan</h1>
+        </div>
+      </div>
+      <div id="list-layanan">
+        <div class="row min-vh-100">
+          <div class="col-md-6">
+            <div id="serviceDescList" class="w-100"></div>
+          </div>
+          <div class="col-md-6 d-flex position-sticky vh-100" style="z-index: 8; top: 0;">
+            <div class="h-50 w-50 m-auto border">
+              <div id="serviceImgContainer" class="m-auto overflow-hidden position-relative w-100 h-100" style="width: 100px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Project">
+      <div class="row">
+        <div class="col mb-2">
+          <h1>Ini Heading Project</h1>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
+        </div>
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
+        </div>
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-right" data-aos-duration="1500" alt="..." />
+        </div>
+        <div class="col-6 mb-2">
+          <img src="./assets/img/logo_dark.png" class="img-fluid w-50" data-aos="fade-down-left" data-aos-duration="1500" alt="..." />
+        </div>
+      </div>
+    </section>
+    <section class="Tentang kami">
+      <div class="row border">
+        <div class="col">
+          <h4>About</h4>
+          <h1>
+            We design and develop web and mobile apps for startups, small
+            and medium businesses
+          </h1>
+        </div>
+      </div>
+      <div class="row border">
+        <div class="col border">
+          <img src="./assets/img/about-top.webp" class="img-fluid" alt="..." />
+        </div>
+      </div>
+      <div class="row border">
+        <h3>
+          We like to see our clients as partners and we do our best to
+          deliver the product they and their users are 100% satisfied with.
+          Agile principles, ongoing communication, transparency are the
+          cornerstones of each of our projects.
+        </h3>
+        <div class="col-3 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-3 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-3 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+        <div class="col-3 border">
+          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Sosmed Icon -->
+  <div class="position-fixed ms-2 mb-3 ps-3 d-none d-md-block" style="bottom: 0">
+    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+      <i class="fa-brands fa-facebook-f m-auto"></i>
+    </div>
+    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </div>
+  <!-- End Sosmed Icon -->
+  <script src="app/sys.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</body>
+
 </html>
