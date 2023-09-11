@@ -28,12 +28,17 @@
   <script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
   <script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
   <script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <!-- Dysania -->
   <link rel="stylesheet" href="app/css/animation.css">
   <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
     .banner {
-      background-color: rgb(251, 251, 251);
-      background-size: cover;
       text-align: center;
       /* border: 1px solid black; */
       color: #000;
@@ -76,73 +81,124 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <div id="sectionBanner" class="banner min-vh-100 d-flex flex-column">
-    <h1 class="align-content-center m-auto">
-      Design, Development, Maintenance
-    </h1>
+  <div id="sectionBanner" class="banner position-relative overflow-hidden">
+    <div class="position-absolute h-100 w-100" style="z-index: -1; left: 0; top: 0;">
+      <div id="carouselExampleSlidesOnly" class="carousel slide h-100"  data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="assets/img/banner1.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover; object-position: center;">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="assets/img/banner2.jpg" class="d-block w-100 h-100" alt="..."  style="object-fit: cover; object-position: center;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute w-100 h-100" style="z-index: 0; left: 0; top: 0; background: rgba(255, 255, 255, 0.6);"></div>
+    <div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0;">
+      <div class="m-auto pb-5">
+        <h6 class="mb-5">
+          Layanan kami
+        </h6>
+        <h1 class="align-content-center">
+          Android, Dekstop, Web
+        </h1>
+        <h5>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Pesan Sekarang ></a>
+        </h5>
+      </div>
+    </div>
   </div>
   <div class="container">
     <section id="sectionLayanan" class="home">
-      <!-- <div class="row">
-        <div class="col">
-          <h3>Ini heading home</h3>
-          <h1>
-            From proof of concepts (PoC) and minimum viable products (MVP)
-            to complex enterprise-level systems – we’ve got everything
-            covered. (Pengenalan perusahaan)
-          </h1>
-        </div>
-      </div> -->
       <div class="min-vh-100 d-flex">
-        <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000">
-          <div class="col-md-6">
-            <b>Judul Pengenalan</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad
-            quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi
-            voluptas?
+        <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="col-md-6 px-5 mb-4 mb-md-0">
+            <h1><b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga pebisnis di seluruh
+            dunia.</b></h1>
           </div>
-          <div class="col-md-6">
-            <b>Deskripsi singkat perusahaan</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet quo ipsa? A, totam quisquam? Corrupti hic velit nisi iusto at modi aperiam facilis, rerum, eum quod repellendus deserunt dolore!  
-          </div>
-        </div>
-      </div>
-      <div class="row min-vh-100 pt-3">
-        <div class="col-md-6" data-aos="zoom-out-right" data-aos-duration="1000">
-          <h3>Layanan Kami</h3>
-        </div>
-        <div class="col-md-6">
-          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500">
-            <div class="row">
-              <div class="col-2">
-                <h1><i class="fa-solid fa-house"></i></h1>
-              </div>
-              <div class="col-10">
-                <h1 style="line-height: 1;"><b>Web Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-              </div>
-            </div>
-          </div>
-          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <div class="row">
-              <div class="col-2">
-                <h1><i class="fa-solid fa-house"></i></h1>
-              </div>
-              <div class="col-10">
-                <h1><b>Android Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-              </div>
-            </div>
-          </div>
-          <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-            <div class="row">
-              <div class="col-2">
-                <h1><i class="fa-solid fa-house"></i></h1>
-              </div>
-              <div class="col-10">
-                <h1><b>Desktop Development</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-              </div>
-            </div>
+          <div class="col-md-6 px-5">
+              Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
+              Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan
+              pengembangan serta perawatan sistem
+            <br>
+            <br>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Selengkapnya ></a>
           </div>
         </div>
       </div>
-      <div class="min-vh-100">
+      <div class="min-vh-100 pt-3">
+        <div class="row mb-5  px-5 px-md-1">
+          <div class="col-12 px-0" data-aos="zoom-out-right" data-aos-duration="1000">
+            <h1><b>Layanan Kami</b></h1>
+          </div>
+        </div>
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="w-75 h-100 rounded position-relative overflow-hidden">
+              <div id="img-service" class="w-100 h-100 position-absolute rounded img-service" style="background: url('assets/img/service.jpg'); background-size: cover; background-position: center; left: 0; top: 0;"></div>
+            </div>
+          </div>
+          <div class="col-md-6 px-5 px-md-1">
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+              <div class="row">
+                <div class="col-2">
+                  <h1><i class="fa-solid fa-house"></i></h1>
+                </div>
+                <div class="col-10">
+                  <h4 class="mb-0"><b>Android Development</b>. Kami melayani dalam pembuatan aplikasi Android yang menarik, cepat, mudah digunakan.
+                  </h4>
+                  <div class="mt-2">
+                    <nav class="nav">
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Desain UI/UX</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Software Testing</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>API</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Konsultasi</small></a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+              <div class="row">
+                <div class="col-2">
+                  <h1><i class="fa-solid fa-house"></i></h1>
+                </div>
+                <div class="col-10">
+                  <h4 class="mb-0"><b>Desktop Development</b>. Kami melayani dalam pembuatan aplikasi Desktop yang inovatif dan mudah digunakan.</h4>
+                  <div class="mt-2">
+                    <nav class="nav">
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Desain UI/UX</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Software Testing</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>API</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Konsultasi</small></a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+              <div class="row">
+                <div class="col-2">
+                  <h1><i class="fa-solid fa-house"></i></h1>
+                </div>
+                <div class="col-10">
+                  <h4 class="mb-0"><b>Web Development</b>. Kami melayani pengembangan website sesuai dengan kebutuhan Anda.</h4>
+                  <div class="mt-2">
+                    <nav class="nav">
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Website Profile</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Web Based Information System</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Web E-Commerce</small></a>
+                      <a class="nav-link text-muted ps-0 pb-0 pt-0"><small>Maintenance</small></a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="min-vh-100 mt-5 pt-5">
         <div class="mb-5 pb-5">
           <div class="row">
             <div class="col-md-6">
@@ -237,7 +293,7 @@
     </section>
     <section class="Layanan">
       <div class="row">
-        <div class="col text-center">
+        <div class="col-md-6 text-center">
           <h1>Ini konten Layanan</h1>
         </div>
       </div>
@@ -317,7 +373,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="app/js/sys.js"></script>
+  <script src="app/js/syss.js"></script>
 </body>
 </body>
 

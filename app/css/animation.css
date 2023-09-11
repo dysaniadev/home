@@ -2,11 +2,43 @@
     animation: img-portofolio 1s both ease-in-out;
 }
 
+.img-service{
+    filter: grayscale();
+}
+
+.img-service-animation{
+    animation: img-service 1.5s both ease-in-out;
+    scale: 1;
+}
+
+.img-service-animation-reverse{
+    animation: img-service-reverse 1.5s both ease-in-out;
+    scale: 2;
+}
+
+@keyframes img-service {
+    0%{
+        scale: 2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes img-service-reverse {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 2;
+    }
+}
+
 @keyframes img-portofolio {
     0%{
         scale: 1;
     }
     100%{
-        scale: 1.2;
+        scale: 1.1;
     }
 }

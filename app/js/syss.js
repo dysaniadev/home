@@ -73,6 +73,16 @@ $(document).ready(function(){
                 $("#imgServiceList" + index).css({'height': '0'});            
             }
         }
+
+        if(window.pageYOffset >= window.innerHeight + (window.innerHeight/2)){
+            $("#img-service").css({scale:2});
+            $("#img-service").removeClass("img-service-animation-reverse");
+            $("#img-service").addClass("img-service-animation");
+        } else {
+            $("#img-service").removeClass("img-service-animation");
+            $("#img-service").addClass("img-service-animation-reverse");
+        }
     }
     $(".section").attr("style", "padding-top: " + parseInt($("#dysaniaNavbar").outerHeight() + 10) + "px");
+    $("#sectionBanner").attr("style", "height: " + (Number(window.innerHeight) - Number($("#dysaniaNavbar").outerHeight())) + "px");
 });
