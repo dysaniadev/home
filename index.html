@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <!-- Dysania -->
   <link rel="stylesheet" href="app/css/animation.css">
+  <link rel="stylesheet" href="app/css/sys.css">
   <style>
     * {
       font-family: 'Poppins', sans-serif;
@@ -71,63 +72,71 @@
             <a class="nav-link" href="#sectionProject"><b>Projek</b></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#"><b>Tentang Kami</b></a>
+            <a class="nav-link" href="#sectionAboutUs"><b>Tentang Kami</b></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="#"><b>Pemesanan</b></a>
+            <a class="nav-link" href="#sectionPemesanan"><b>Pemesanan</b></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- End Navbar -->
-  <div id="sectionBanner" class="banner position-relative overflow-hidden">
-    <div class="position-absolute h-100 w-100" style="z-index: -1; left: 0; top: 0;">
-      <div id="carouselExampleSlidesOnly" class="carousel slide h-100"  data-bs-ride="carousel">
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <img src="assets/img/banner1.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover; object-position: center;">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="assets/img/banner2.jpg" class="d-block w-100 h-100" alt="..."  style="object-fit: cover; object-position: center;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="position-absolute w-100 h-100" style="z-index: 0; left: 0; top: 0; background: rgba(255, 255, 255, 0.6);"></div>
-    <div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0;">
-      <div class="m-auto pb-5">
-        <h6 class="mb-5">
-          Layanan kami
-        </h6>
-        <h1 class="align-content-center">
-          Android, Dekstop, Web
-        </h1>
-        <h5>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Pesan Sekarang ></a>
-        </h5>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <section id="sectionLayanan" class="home">
-      <div class="min-vh-100 d-flex">
-        <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-          <div class="col-md-6 px-5 mb-4 mb-md-0">
-            <h1><b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga pebisnis di seluruh
-            dunia.</b></h1>
-          </div>
-          <div class="col-md-6 px-5">
-              Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
-              Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan
-              pengembangan serta perawatan sistem
-            <br>
-            <br>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Selengkapnya ></a>
+  <section id="sectionHome">
+    <div class="banner position-relative overflow-hidden min-vh-100">
+      <div class="position-absolute h-100 w-100" style="z-index: -1; left: 0; top: 0;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="assets/img/banner1.jpg" class="d-block w-100 h-100" alt="..."
+                style="object-fit: cover; object-position: center;">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="assets/img/banner2.jpg" class="d-block w-100 h-100" alt="..."
+                style="object-fit: cover; object-position: center;">
+            </div>
           </div>
         </div>
       </div>
-      <div class="min-vh-100 pt-3">
+      <div class="position-absolute w-100 h-100" style="z-index: 0; left: 0; top: 0; background: rgba(255, 255, 255, 0.6);">
+      </div>
+      <div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0;">
+        <div class="m-auto pb-5">
+          <h6 class="mb-5">
+            Layanan kami
+          </h6>
+          <h1 class="align-content-center">
+            Android, Dekstop, Web
+          </h1>
+          <h5>
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              href="#sectionPemesanan">Pesan Sekarang ></a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="min-vh-100 d-flex container">
+      <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="col-md-6 px-5 mb-4 mb-md-0">
+          <h1><b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga
+              pebisnis di seluruh
+              dunia.</b></h1>
+        </div>
+        <div class="col-md-6 px-5">
+          Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
+          Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan
+          pengembangan serta perawatan sistem
+          <br>
+          <br>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            href="">Selengkapnya ></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="containers">
+    <section id="sectionLayanan" class="container">
+      <div class="min-vh-100 section">
         <div class="row mb-5  px-5 px-md-1">
           <div class="col-12 px-0" data-aos="zoom-out-right" data-aos-duration="1000">
             <h1><b>Layanan Kami</b></h1>
@@ -291,9 +300,9 @@
         </div>
       </div>
     </section>
-    <section class="Layanan">
+    <section id="sectionContentLayananExp" class="min-vh-100 container section">
       <div class="row">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6">
           <h1>Ini konten Layanan</h1>
         </div>
       </div>
@@ -311,7 +320,7 @@
         </div>
       </div>
     </section>
-    <section id="sectionProject" class="Project min-vh-100 mb-4 section">
+    <section id="sectionProject" class="Project container min-vh-100 mb-4 section">
       <div class="row">
         <div class="col mb-2">
           <h1>Ini Heading Project</h1>
@@ -320,89 +329,96 @@
       <div id="rowPortofolio" class="row text-center">
       </div>
     </section>
-    <section class="Tentang kami">
-      <div class="row border">
-        <div class="col">
-          <h4>About</h4>
-          <h1>
-            We design and develop web and mobile apps for startups, small
-            and medium businesses
-          </h1>
+    <section id="sectionAboutUs" class="min-vh-100 section container-fluid px-0 m-0">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>About</h4>
+            <h1>
+              We design and develop web and mobile apps for startups, small
+              and medium businesses
+            </h1>
+          </div>
         </div>
       </div>
-      <div class="row border">
-        <div class="col border">
-          <img src="./assets/img/about-top.webp" class="img-fluid" alt="..." />
+      <div class="row p-0 m-0">
+        <div class="col-12 p-0 m-0 position-relative jumbotron overflow-hidden" style="height: 75vh;">
+          <img id="imgAbout" src="./assets/img/about-top.webp" class="position-absolute m-0 vw-100" alt="..." />
         </div>
       </div>
-      <div class="row border">
-        <h3>
-          We like to see our clients as partners and we do our best to
-          deliver the product they and their users are 100% satisfied with.
-          Agile principles, ongoing communication, transparency are the
-          cornerstones of each of our projects.
-        </h3>
-        <div class="col-3 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-        </div>
-        <div class="col-3 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-        </div>
-        <div class="col-3 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-        </div>
-        <div class="col-3 border">
-          <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+      <div class="container">
+        <div class="row border">
+          <h3>
+            We like to see our clients as partners and we do our best to
+            deliver the product they and their users are 100% satisfied with.
+            Agile principles, ongoing communication, transparency are the
+            cornerstones of each of our projects.
+          </h3>
+          <div class="col-3 border">
+            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+          </div>
+          <div class="col-3 border">
+            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+          </div>
+          <div class="col-3 border">
+            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+          </div>
+          <div class="col-3 border">
+            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+          </div>
         </div>
       </div>
     </section>
-    <section class="pemesanan">
-      <h1>Interested? <br> let's talk</h1>
-      <p>Just fill this simple form in and we will contact you promptly to discuss your project. Hate forms? Drop us a line at hello@ronasit.com</p>
-      <h2>Work with us</h2>
-      <form action="">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="">Nama Pelanggan</label>
-                        <input type="text" name="nama_pelanggan" id="" class="form-control" placeholder="Masukan nama">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="">Email</label>
-                        <input type="email" name="email_pelanggan" id="" class="form-control" placeholder="Masukan email">
-                    </div>
-                </div>
+    <section id="sectionPemesanan" class="pemesanan container min-vh-100 d-flex section">
+      <div class="my-auto w-100">
+        <h1>Interested? <br> let's talk</h1>
+        <p>Just fill this simple form in and we will contact you promptly to discuss your project. Hate forms? Drop us a line at
+          hello@ronasit.com</p>
+        <h2>Work with us</h2>
+        <form action="">
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Nama Pelanggan</label>
+                <input type="text" name="nama_pelanggan" id="" class="form-control" placeholder="Masukan nama">
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="">Nama Aplikasi</label>
-                        <input type="text" name="nama_aplikasi" id="" class="form-control" placeholder="Masukan nama">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <label for="">Jenis Aplikasi</label><br>
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">Android</label>
-                      
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">Website</label>
-                      
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck3">Dekstop</label>
-                      </div>
-                </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name="email_pelanggan" id="" class="form-control" placeholder="Masukan email">
+              </div>
             </div>
-            <div class="row mt-2">
-                <div class="col-12">
-                    <textarea name="keterangan" id="" cols="150" rows="10"></textarea>
-                </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Jenis / Nama Aplikasi</label>
+                <input type="text" name="nama_aplikasi" id="" class="form-control" placeholder="Cth. Aplikasi Parkir">
+              </div>
             </div>
-            <button type="submit" class="btn btn-info">Send Request</button>
+            <div class="col-md-3">
+              <label for="">Basis Aplikasi</label><br>
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Android</label>
+        
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Website</label>
+        
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Dekstop</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3 mt-2">
+            <div class="col-6">
+              <textarea name="keterangan" id=""  class="form-control" rows="10" placeholder="Keterangan Tambahan"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info">Send Request</button>
         </form>
+      </div>
     </section>
   </div>
   <!-- Sosmed Icon -->
@@ -421,7 +437,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="app/js/syss.js"></script>
+  <script src="app/js/sys.js"></script>
 </body>
 </body>
 

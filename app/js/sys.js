@@ -1,5 +1,7 @@
 let dataServis = null;
-$.getJSON("http://localhost/company-profile/assets/data/services.json", function(json) {
+let jumbotronAboutTop = 0;
+let jumbotronAboutBottom = -50;
+$.getJSON("assets/data/services.json", function(json) {
     dataServis = json;
     let i = 1;
     json.forEach(element => {
@@ -25,7 +27,7 @@ $.getJSON("http://localhost/company-profile/assets/data/services.json", function
         i++;
     });
 });
-$.getJSON("http://localhost/company-profile/assets/data/portofolio.json", function(json) {
+$.getJSON("assets/data/portofolio.json", function(json) {
     json.forEach(element => {
         let container = $("<div></div>");
         container.addClass("col-md-6 d-flex align-items-stretch mb-3");
@@ -54,7 +56,7 @@ $.getJSON("http://localhost/company-profile/assets/data/portofolio.json", functi
 });
 $(document).ready(function(){
     window.onscroll = function(){
-        let minOffset = $("#sectionBanner").outerHeight() + $("#sectionLayanan").outerHeight();
+        let minOffset = $("#sectionHome").outerHeight() + $("#sectionLayanan").outerHeight();
         let pageOffset = window.pageYOffset - minOffset;
         if(pageOffset > 0 && (pageOffset/window.innerHeight) < dataServis.length){
             if(parseInt(pageOffset/window.innerHeight) >= 0){
@@ -81,6 +83,13 @@ $(document).ready(function(){
         } else {
             $("#img-service").removeClass("img-service-animation");
             $("#img-service").addClass("img-service-animation-reverse");
+        }
+
+        let minOffsetAboutUs = $("#sectionHome").outerHeight() + $("#sectionLayanan").outerHeight() + $("#sectionContentLayananExp").outerHeight() + $("#sectionProject").outerHeight();
+        if((window.pageYOffset - minOffsetAboutUs) > 0 && (window.pageYOffset - minOffsetAboutUs) <= window.innerHeight){
+            $("#imgAbout").attr("style", "top: " + (((window.pageYOffset - minOffsetAboutUs)/3)* -1) + "px; bottom: 0 !important;");
+        } else if((window.pageYOffset - minOffsetAboutUs) <= 0){
+            $("#imgAbout").attr("style", "bottom: " + ((window.innerHeight)*-1) + "px; top: 0px");
         }
     }
     $(".section").attr("style", "padding-top: " + parseInt($("#dysaniaNavbar").outerHeight() + 10) + "px");
