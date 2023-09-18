@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 1,
+        "img" : "service1.png",
+        "title" : "Find Barber",
+        "desc" : "Sebuah aplikasi berbasis android yang menerapkan teknologi Sitem Informasi Geografi untuk mencari informasi terkait barber disekitar lokasi pengguna.",
+        "tag" : [
+            "Android", "API", "Web Service", "GIS"
+        ]
+    },
+    {
+        "id" : 2,
+        "img" : "20230406_062028.jpg",
+        "title" : "Sistem Penyewaan Jas",
+        "desc" : "Sebuah sistem berbasis desktop client server yang digunakan untuk mengelola transaksi secara digital.",
+        "tag" : [
+            "Desktop", "API", "Web Service"
+        ]
+    },
+    {
+        "id" : 3,
+        "img" : "service2.png",
+        "title" : "Sistem Informasi Perpustakaan",
+        "desc" : "Sebuah sistem berbasis web yang digunakan untuk mengelola data buku sekaligus transaksi yang ada pada perpustakaan",
+        "tag" : [
+            "Sistem Informasi", "Perpustakaan", "Web"
+        ]
+    }
+]

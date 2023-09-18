@@ -1,17 +1,89 @@
 [
     {
-        "id" : 1,
-        "img" : "service1.png",
-        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+        "id" : "01",
+        "title" : "Android Development",
+        "faIconClass" : "fa-brands fa-android",
+        "desc" : "Kami melayani dalam pembuatan aplikasi Android yang menarik, cepat, mudah digunakan.",
+        "fullDesc" : "Kami melayani pembuatan desain sekaligus pengembangan aplikasi Android dengan memperhatikan kebutuhan pelanggan. Kami melakukan tahapan-tahapan seperti analisis kebutuhan pelanggan, prototyping, evaluasi, hingga pengembangan dan maintenance aplikasi.",
+        "tag" : [
+            {
+                "titleTag" : "Desain UI/UX",
+                "bgImage" : "1.png",
+                "descTag" : "Memperkaya desain aplikasi Android kamu agar terlihat menarik dan mudah digunakan (User Friendly)."
+            },
+            {
+                "titleTag" : "Software Testing",
+                "bgImage" : "2.png",
+                "descTag" : "Kami melakukan pengecekan aplikasi Android apakah sudah sesuai dengan kebutuhan pengguna. Pengujian software dilakukan mencakup uji kinerja fitur, uji performa, dan uji kualitas kode program. Kami juga memberikan fasilitas bug fixing untuk memperbaiki program Anda."
+            },
+            {
+                "titleTag" : "API",
+                "bgImage" : "3.png",
+                "descTag" : "Kami melayani pembuatan aplikasi Android berbasis Stand Alone dan Client-Server. Kami juga menyediakan pembuatan API agar aplikasi Anda dapat berkomunikasi secara Multi-Platform."
+            },
+            {
+                "titleTag" : "Konsultasi",
+                "bgImage" : "4.png",
+                "descTag" : "Kami juga melayani konsultasi mengenai perancangan, pengembangan, dan perawatan aplikasi Android yang ingin Anda buat. Kami selalu mendukung transformasi digital Anda kapanpun dan dimanapun."
+            }
+        ]
     },
     {
-        "id" : 2,
-        "img" : "20230406_062028.jpg",
-        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+        "id" : "02",
+        "title" : "Desktop Development",
+        "faIconClass" : "fa-solid fa-desktop",
+        "desc" : "Kami melayani dalam pembuatan aplikasi Desktop yang inovatif dan mudah digunakan",
+        "fullDesc" : "Kami melayani pembuatan desain sekaligus pengembangan aplikasi Desktop dengan memperhatikan kebutuhan pelanggan. Kami melakukan tahapan-tahapan seperti analisis kebutuhan pelanggan, prototyping, evaluasi, hingga pengembangan dan maintenance untuk aplikasi Desktop Anda.",
+        "tag" : [
+            {
+                "titleTag" : "Desain UI/UX",
+                "bgImage" : "1.png",
+                "descTag" : "Memperkaya desain aplikasi Desktop kamu agar terlihat menarik dan mudah digunakan (User Friendly)."
+            },
+            {
+                "titleTag" : "Software Testing",
+                "bgImage" : "2.png",
+                "descTag" : "Kami melakukan pengecekan aplikasi Desktop apakah sudah sesuai dengan kebutuhan pengguna. Pengujian software dilakukan mencakup uji kinerja fitur, uji performa, dan uji kualitas kode program. Kami juga memberikan fasilitas bug fixing untuk memperbaiki program Desktop Anda."
+            },
+            {
+                "titleTag" : "API",
+                "bgImage" : "3.png",
+                "descTag" : "Kami melayani pembuatan aplikasi Desktop berbasis Stand Alone dan Client-Server. Kami juga menyediakan pembuatan API agar aplikasi Desktop Anda dapat berkomunikasi secara Multi-Platform."
+            },
+            {
+                "titleTag" : "Konsultasi",
+                "bgImage" : "4.png",
+                "descTag" : "Kami juga melayani konsultasi mengenai perancangan, pengembangan, dan perawatan aplikasi Desktop yang ingin Anda buat. Kami selalu mendukung transformasi digital Anda kapanpun dan dimanapun."
+            }
+        ]
     },
     {
-        "id" : 3,
-        "img" : "service2.png",
-        "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit vitae amet. Vero ad quis unde, odio ipsa corrupti ut veniam architecto voluptatem, nulla maxime, deserunt dolorem. Fuga, modi voluptas?"
+        "id" : "03",
+        "title" : "Web Development",
+        "faIconClass" : "fa-solid fa-globe",
+        "desc" : "Kami melayani pengembangan website sesuai dengan kebutuhan Anda.",
+        "fullDesc" : "Kami melayani pembuatan desain sekaligus pengembangan Website dan Web App dengan memperhatikan kebutuhan pengguna. Kami melakukan tahapan-tahapan seperti analisis kebutuhan pengguna, prototyping, evaluasi, hingga pengembangan dan maintenance.",
+        "tag" : [
+            {
+                "titleTag" : "Website Profile",
+                "bgImage" : "1.png",
+                "descTag" : "Kami dapat membantu Anda membangun Website yang dapat mengoptimalkan profil dan portofolio Anda dengan menarik, interaktif, dan inovatif. Dengan berbagai konsep yang kami tawarkan, Anda dapat menggunakannya sesuai passion dan selera."
+            },
+            {
+                "titleTag" : "Web Based Information System",
+                "bgImage" : "2.png",
+                "descTag" : "Kami dapat membantu Anda membangun Website guna mengoptimalkan sharing data dan informasi untuk perusahaan Anda. Kami dapat melakukan adaptasi dalam sistem guna menyesuaikan rules business pada perusahaan Anda."
+            },
+            {
+                "titleTag" : "Web E-commerce",
+                "bgImage" : "3.png",
+                "descTag" : "Kami dapat membantu Anda membangun Website untuk meningkatkan penjualan Anda secara digital dan paling inovatif. Kami membuat banyak fitur yang dapat anda gunakan untuk mengoptimalisasi penjualan seperti statistik penjualan, pengalaman interaksi pengguna, dan fitur promosi."
+            },
+            {
+                "titleTag" : "Software Testing",
+                "bgImage" : "4.png",
+                "descTag" : "Kami melakukan pengecekan Website apakah sudah sesuai dengan kebutuhan pengguna. Pengujian software dilakukan mencakup uji kinerja fitur, uji performa, dan uji kualitas kode program. Kami juga memberikan fasilitas bug fixing untuk memperbaiki Website Anda."
+            }
+        ]
     }
 ]

@@ -1,0 +1,45 @@
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+textarea::placeholder
+{
+    opacity: 0.4;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+#imgAbout{
+    top: 0;
+    height: auto;
+    min-height: 110% !important;
+}
+
+.imgServiceExmp{
+    height: 75vh;
+    object-fit: cover;
+}
+
+.tagServiceItem:hover > img {
+    animation: imageTagServiceItem 1.5s both ease-in-out;
+}
+.tagServiceItem > .tagContent:hover {
+    animation: contentTagServiceItem 1s both ease-in-out;
+}
+
+@keyframes imageTagServiceItem {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes contentTagServiceItem {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
