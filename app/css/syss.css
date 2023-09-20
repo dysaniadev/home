@@ -5,6 +5,75 @@ textarea::placeholder
     opacity: 0.4;
 }
 
+.btn-dys{
+    position: relative;
+    background-color: #212529;
+    color: #212529;
+    display: flex;
+    border: none;
+    overflow: hidden;
+}
+
+.btn-dys,
+.btn-dys::after{
+    border-radius: 30px;
+}
+
+.btn-dys::after{
+    color: #212529;
+    background: #fff;
+    border: #212529 1px solid;
+    transform: translateY(100%);
+    transition-duration: 0.5s;
+}
+.btn-dys::before{
+    background: #212529;
+    color: #fff;
+    background: none;
+    transform: translateY(0%);
+    transition-duration: 0.5s;
+}
+.btn-dys::after,
+.btn-dys::before{
+    position: absolute;
+    content: attr(data-content);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.btn-dys:hover:after{
+    transform: translateY(0%);
+    transition-duration: 0.5s;
+}
+.btn-dys:hover::before{
+    transform: translateY(-100%);
+    transition-duration: 0.5s;
+}
+
+#dysaniaNavbar{
+    top: 0;
+    z-index: 9;
+}
+
+#dysaniaNavbar>div>.nav-bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(2px);
+}
+
+#dysaniaNavbar>div>*:not(.nav-bg){
+    z-index: 2;
+}
+
 .cursor-pointer{
     cursor: pointer;
 }
@@ -23,7 +92,7 @@ textarea::placeholder
 .tagServiceItem:hover > img {
     animation: imageTagServiceItem 1.5s both ease-in-out;
 }
-.tagServiceItem > .tagContent:hover {
+.tagServiceItem:hover > .tagContent{
     animation: contentTagServiceItem 1s both ease-in-out;
 }
 

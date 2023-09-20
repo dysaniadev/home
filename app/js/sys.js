@@ -123,9 +123,14 @@ async function init(){
                     col2Row1.attr("data-aos", "fade-up");
                     col2Row1.attr("data-aos-duration", "1500");
                     let fullDesc = $("<h5></h5>");
-                    fullDesc.addClass("mb-5");
+                    fullDesc.addClass("mb-0");
                     fullDesc.html(element.fullDesc);
-                    col2Row1.append(fullDesc);
+                    let btnDiscuss = $("<button></button>");
+                    btnDiscuss.addClass("btn-dys p-3 my-3");
+                    btnDiscuss.html("Let's Diccuss");
+                    btnDiscuss.attr("data-content","Let's Diccuss");
+                    btnDiscuss.attr("onclick","window.location='#sectionPemesanan'");
+                    col2Row1.append(fullDesc, btnDiscuss);
                     row1.append(col1Row1, col2Row1);
                     let row2 = $("<div></div>");
                     row2.addClass("row d-flex");
@@ -146,11 +151,11 @@ async function init(){
                         let descTag = $("<div></div>").html(element.descTag);
                         let bgImage = $("<img>");
                         bgImage.addClass("position-absolute w-100 h-100");
-                        if(1%2 == 0){
-                            bgImage.addClass("ps-md-4");
-                        } else {
-                            bgImage.addClass("pe-md-4");
-                        }
+                        // if(1%2 == 0){
+                        //     bgImage.addClass("ps-md-4");
+                        // } else {
+                        //     bgImage.addClass("pe-md-4");
+                        // }
                         bgImage.attr("style", "object-fit: cover; z-index: -9; opacity: 0");
                         bgImage.attr("src", "assets/img/projectExmp/" + element.bgImage);
                         let contenContainer = $("<div></div>");
@@ -168,6 +173,30 @@ async function init(){
             });
         });
     });
+}
+function removeActiveNavbar(){
+    $("#dysaniaNavbarContent>li>a.active").removeClass("active");
+}
+function selectNavbar(link){
+    $("#dysaniaNavbarContent>li>a[href='" + link + "']").addClass("active");
+}
+function setActiveNavbar(){
+    if(window.pageYOffset < parseInt($("#sectionHome").outerHeight())){
+        removeActiveNavbar();
+        selectNavbar("#");
+    } else if (window.pageYOffset >= parseInt($("#sectionHome").outerHeight()) && window.pageYOffset < (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight()))){
+        removeActiveNavbar();
+        selectNavbar("#sectionLayanan");
+    } else if (window.pageYOffset >= (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight())) && window.pageYOffset < (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight()) + parseInt($("#sectionProject").outerHeight()))){
+        removeActiveNavbar();
+        selectNavbar("#sectionProject");
+    } else if (window.pageYOffset >= (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight()) + parseInt($("#sectionProject").outerHeight())) && window.pageYOffset < (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight()) + parseInt($("#sectionProject").outerHeight()) + parseInt($("#sectionAboutUs").outerHeight()))){
+        removeActiveNavbar();
+        selectNavbar("#sectionAboutUs");
+    } else if (window.pageYOffset >= (parseInt($("#sectionLayanan").outerHeight()) + parseInt($("#sectionContentLayananExp").outerHeight()) + parseInt($("#sectionHome").outerHeight()) + parseInt($("#sectionProject").outerHeight()) + parseInt($("#sectionAboutUs").outerHeight()))){
+        removeActiveNavbar();
+        selectNavbar("#sectionPemesanan");
+    }
 }
 init().then(function(){
     $(document).ready(function(){
@@ -210,9 +239,14 @@ init().then(function(){
             } else if((window.pageYOffset - minOffsetAboutUs) <= 0){
                 $("#imgAbout").attr("style", "bottom: " + ((window.innerHeight)*-1) + "px; top: 0px");
             }
+
+            setActiveNavbar();
         }
         $(".section").attr("style", "padding-top: " + parseInt($("#dysaniaNavbar").outerHeight() + 10) + "px");
         $("#sectionBanner").attr("style", "height: " + (Number(window.innerHeight) - Number($("#dysaniaNavbar").outerHeight())) + "px");
-        
+        setActiveNavbar();
     });
+});
+$("#dysaniaNavbarContent>li>a").click(function(){
+    setActiveNavbar();
 });

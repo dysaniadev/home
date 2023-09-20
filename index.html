@@ -50,10 +50,11 @@
 
 <body>
   <!-- Navbar -->
-  <nav id="dysaniaNavbar" class="navbar navbar-expand-lg bg-body-tertiary position-sticky text-start" style="top: 0; z-index: 9;">
-    <div class="container-fluid">
+  <nav id="dysaniaNavbar" class="navbar navbar-expand-lg bg-transparent position-fixed w-100 text-start py-0">
+    <div class="container-fluid position-relative py-3 z-1">
+      <div class="nav-bg position-absolute bg-body-tertiary"></div>
       <a class="navbar-brand ps-3" href="#">
-        <img src="assets/img/logo_mini.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+        <img src="assets/img/logo_mini_transparent.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
         <img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -61,7 +62,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul id="dysaniaNavbarContent" class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item px-2">
             <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
           </li>
@@ -102,9 +103,9 @@
       </div>
       <div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0;">
         <div class="m-auto pb-5">
-          <h6 class="mb-5">
-            Layanan kami
-          </h6>
+          <div class="mb-5">
+            <img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
+          </div>
           <h1 class="align-content-center">
             Android, Dekstop, Web
           </h1>
@@ -118,9 +119,11 @@
     <div class="min-vh-100 d-flex container">
       <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="col-md-6 px-5 mb-4 mb-md-0">
-          <h1><b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga
+          <h1>
+            <b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga
               pebisnis di seluruh
-              dunia.</b></h1>
+              dunia.</b>
+          </h1>
         </div>
         <div class="col-md-6 px-5">
           Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
@@ -158,7 +161,7 @@
     <section id="sectionContentLayananExp" class="min-vh-100 container section">
       <div class="row">
         <div class="col-md-6 mb-3 mb-md-0">
-          <h1>Ini konten Layanan</h1>
+          <h1>Layanan</h1>
         </div>
       </div>
       <div id="list-layanan">
@@ -178,7 +181,7 @@
     <section id="sectionProject" class="Project container min-vh-100 mb-4 section">
       <div class="row">
         <div class="col mb-2">
-          <h1>Ini Heading Project</h1>
+          <h1>Project</h1>
         </div>
       </div>
       <div id="rowPortofolio" class="row text-center">
