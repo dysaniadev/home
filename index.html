@@ -1,355 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="assets/img/logo_mini_transparent.png" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<!-- Boostrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/brands.min.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/solid.min.css" />
+		<link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/fontawesome.min.css" />
+		<script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
+		<script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
+		<script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+		<!-- Dysania -->
+		<link rel="stylesheet" href="app/css/animation.css" />
+		<link rel="stylesheet" href="app/css/syss.css" />
+		<style>
+			* {
+				font-family: "Poppins", sans-serif;
+			}
+			.banner {
+				text-align: center;
+				/* border: 1px solid black; */
+				color: #000;
+			}
+		</style>
+		<script src="app/js/env.js"></script>
+		<title>Dysania</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="assets/img/logo_mini_transparent.png" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Boostrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/brands.min.css" />
-  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/solid.min.css" />
-  <link rel="stylesheet" href="vendor/fontawesome/6.4.2/css/fontawesome.min.css" />
-  <script src="vendor/fontawesome/6.4.2/js/brands.min.js"></script>
-  <script src="vendor/fontawesome/6.4.2/js/solid.min.js"></script>
-  <script src="vendor/fontawesome/6.4.2/js/fontawesome.min.js"></script>
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Dysania -->
-  <link rel="stylesheet" href="app/css/animation.css">
-  <link rel="stylesheet" href="app/css/syss.css">
-  <style>
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
-    .banner {
-      text-align: center;
-      /* border: 1px solid black; */
-      color: #000;
-    }
-  </style>
-  <title>Dysania</title>
-</head>
+	<body>
+		<!-- Navbar -->
+		<nav id="dysaniaNavbar" class="navbar navbar-expand-lg bg-transparent position-fixed w-100 text-start py-0">
+			<div class="container-fluid position-relative py-3 z-1">
+				<div class="nav-bg position-absolute bg-body-tertiary"></div>
+				<a class="navbar-brand ps-3" href="#">
+					<img src="assets/img/logo_mini_transparent.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+					<img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul id="dysaniaNavbarContent" class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item px-2">
+							<a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#sectionLayanan"><b>Layanan</b></a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#sectionProject"><b>Projek</b></a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#sectionAboutUs"><b>Tentang Kami</b></a>
+						</li>
+						<li class="nav-item px-2">
+							<a class="nav-link" href="#sectionPemesanan"><b>Pemesanan</b></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+		<section id="sectionHome">
+			<div class="banner position-relative overflow-hidden min-vh-100">
+				<div class="position-absolute h-100 w-100" style="z-index: -1; left: 0; top: 0">
+					<div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
+						<div class="carousel-inner h-100">
+							<div class="carousel-item active h-100">
+								<img src="assets/img/banner1.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover; object-position: center" />
+							</div>
+							<div class="carousel-item h-100">
+								<img src="assets/img/banner2.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover; object-position: center" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="position-absolute w-100 h-100" style="z-index: 0; left: 0; top: 0; background: rgba(255, 255, 255, 0.6)"></div>
+				<div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0">
+					<div class="m-auto pb-5">
+						<div class="mb-5">
+							<img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
+						</div>
+						<h1 class="align-content-center">Android, Dekstop, Web</h1>
+						<h5>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#sectionPemesanan">Pesan Sekarang ></a>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="min-vh-100 d-flex container">
+				<div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+					<div class="col-md-6 px-5 mb-4 mb-md-0">
+						<h1>
+							<b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga pebisnis di seluruh dunia.</b>
+						</h1>
+					</div>
+					<div class="col-md-6 px-5">
+						Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021. Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan pengembangan serta perawatan sistem
+						<br />
+						<br />
+						<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">Selengkapnya ></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="containers">
+			<section id="sectionLayanan" class="container">
+				<div class="min-vh-100 section">
+					<div class="row mb-5 px-5 px-md-1">
+						<div class="col-12 px-0" data-aos="zoom-out-right" data-aos-duration="1000">
+							<h1><b>Layanan Kami</b></h1>
+						</div>
+					</div>
+					<div class="row d-flex align-items-stretch">
+						<div class="col-md-6 d-flex align-items-stretch">
+							<div class="w-75 h-100 rounded position-relative overflow-hidden">
+								<div id="img-service" class="w-100 h-100 position-absolute rounded img-service" style="background: url('assets/img/service.jpg'); background-size: cover; background-position: center; left: 0; top: 0"></div>
+							</div>
+						</div>
+						<div id="listShortService" class="col-md-6 px-5 px-md-1"></div>
+					</div>
+				</div>
+				<div id="sectionDescLayanan" class="min-vh-100 mt-5 pt-5"></div>
+			</section>
+			<section id="sectionContentLayananExp" class="min-vh-100 container section">
+				<div class="row">
+					<div class="col-md-6 mb-3 mb-md-0">
+						<h1>Layanan</h1>
+					</div>
+				</div>
+				<div id="list-layanan">
+					<div class="row min-vh-100">
+						<div class="col-md-6">
+							<div id="serviceDescList" class="w-100"></div>
+						</div>
+						<div class="col-md-6 d-none d-md-flex position-sticky vh-100" style="z-index: 8; top: 0">
+							<div class="h-50 m-auto border" style="width: 60%">
+								<div id="serviceImgContainer" class="m-auto overflow-hidden position-relative w-100 h-100" style="width: 100px"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sectionProject" class="Project container min-vh-100 mb-4 section">
+				<div class="row">
+					<div class="col mb-2">
+						<h1>Project</h1>
+					</div>
+				</div>
+				<div id="rowPortofolio" class="row text-center"></div>
+			</section>
+			<section id="sectionAboutUs" class="min-vh-100 section container-fluid px-0 m-0">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h4>About</h4>
+							<h1>We design and develop web and mobile apps for startups, small and medium businesses</h1>
+						</div>
+					</div>
+				</div>
+				<div class="row p-0 m-0">
+					<div class="col-12 p-0 m-0 position-relative jumbotron overflow-hidden" style="height: 75vh">
+						<img id="imgAbout" src="./assets/img/about-top.webp" class="position-absolute m-0 vw-100" alt="..." />
+					</div>
+				</div>
+				<div class="container">
+					<div class="row border">
+						<h3>We like to see our clients as partners and we do our best to deliver the product they and their users are 100% satisfied with. Agile principles, ongoing communication, transparency are the cornerstones of each of our projects.</h3>
+						<div class="col-3 border">
+							<img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+						</div>
+						<div class="col-3 border">
+							<img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+						</div>
+						<div class="col-3 border">
+							<img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+						</div>
+						<div class="col-3 border">
+							<img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sectionPemesanan" class="pemesanan container min-vh-100 d-flex section">
+				<div class="my-auto w-100">
+					<h1>
+						Interested? <br />
+						let's talk
+					</h1>
+					<p>Just fill this simple form in and we will contact you promptly to discuss your project. Hate forms? Drop us a line at hello@ronasit.com</p>
+					<h2>Work with us</h2>
+					<form action="">
+						<div class="row mb-3">
+							<div class="col-md-3">
+								<div class="form-group">
+									<label for="">Nama Pelanggan</label>
+									<input type="text" name="nama_pelanggan" id="" class="form-control" placeholder="Masukan nama" />
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label for="">Email</label>
+									<input type="email" name="email_pelanggan" id="" class="form-control" placeholder="Masukan email" />
+								</div>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-md-3">
+								<div class="form-group">
+									<label for="">Jenis / Nama Aplikasi</label>
+									<input type="text" name="nama_aplikasi" id="" class="form-control" placeholder="Cth. Aplikasi Parkir" />
+								</div>
+							</div>
+							<div class="col-md-3">
+								<label for="">Basis Aplikasi</label><br />
+								<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+									<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+									<label class="btn btn-outline-primary" for="btncheck1">Android</label>
 
-<body>
-  <!-- Navbar -->
-  <nav id="dysaniaNavbar" class="navbar navbar-expand-lg bg-transparent position-fixed w-100 text-start py-0">
-    <div class="container-fluid position-relative py-3 z-1">
-      <div class="nav-bg position-absolute bg-body-tertiary"></div>
-      <a class="navbar-brand ps-3" href="#">
-        <img src="assets/img/logo_mini_transparent.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
-        <img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul id="dysaniaNavbarContent" class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item px-2">
-            <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#sectionLayanan"><b>Layanan</b></a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#sectionProject"><b>Projek</b></a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#sectionAboutUs"><b>Tentang Kami</b></a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#sectionPemesanan"><b>Pemesanan</b></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar -->
-  <section id="sectionHome">
-    <div class="banner position-relative overflow-hidden min-vh-100">
-      <div class="position-absolute h-100 w-100" style="z-index: -1; left: 0; top: 0;">
-        <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
-          <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-              <img src="assets/img/banner1.jpg" class="d-block w-100 h-100" alt="..."
-                style="object-fit: cover; object-position: center;">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="assets/img/banner2.jpg" class="d-block w-100 h-100" alt="..."
-                style="object-fit: cover; object-position: center;">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="position-absolute w-100 h-100" style="z-index: 0; left: 0; top: 0; background: rgba(255, 255, 255, 0.6);">
-      </div>
-      <div class="position-absolute w-100 h-100 d-flex flex-column" style="z-index: 1; left: 0; top: 0;">
-        <div class="m-auto pb-5">
-          <div class="mb-5">
-            <img src="assets/img/logo_light_transparent.png" alt="Logo" height="30" class="d-inline-block align-text-top" />
-          </div>
-          <h1 class="align-content-center">
-            Android, Dekstop, Web
-          </h1>
-          <h5>
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-              href="#sectionPemesanan">Pesan Sekarang ></a>
-          </h5>
-        </div>
-      </div>
-    </div>
-    <div class="min-vh-100 d-flex container">
-      <div class="row my-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="col-md-6 px-5 mb-4 mb-md-0">
-          <h1>
-            <b>Dysania adalah perusahaan software yang mendukung dalam pelayanan IT profesional bagi pelajar hingga
-              pebisnis di seluruh
-              dunia.</b>
-          </h1>
-        </div>
-        <div class="col-md-6 px-5">
-          Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
-          Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan
-          pengembangan serta perawatan sistem
-          <br>
-          <br>
-          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-            href="">Selengkapnya ></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="containers">
-    <section id="sectionLayanan" class="container">
-      <div class="min-vh-100 section">
-        <div class="row mb-5  px-5 px-md-1">
-          <div class="col-12 px-0" data-aos="zoom-out-right" data-aos-duration="1000">
-            <h1><b>Layanan Kami</b></h1>
-          </div>
-        </div>
-        <div class="row d-flex align-items-stretch">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="w-75 h-100 rounded position-relative overflow-hidden">
-              <div id="img-service" class="w-100 h-100 position-absolute rounded img-service" style="background: url('assets/img/service.jpg'); background-size: cover; background-position: center; left: 0; top: 0;"></div>
-            </div>
-          </div>
-          <div id="listShortService" class="col-md-6 px-5 px-md-1">
-          </div>
-        </div>
-      </div>
-      <div id="sectionDescLayanan" class="min-vh-100 mt-5 pt-5">
-      </div>
-    </section>
-    <section id="sectionContentLayananExp" class="min-vh-100 container section">
-      <div class="row">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <h1>Layanan</h1>
-        </div>
-      </div>
-      <div id="list-layanan">
-        <div class="row min-vh-100">
-          <div class="col-md-6">
-            <div id="serviceDescList" class="w-100"></div>
-          </div>
-          <div class="col-md-6 d-none d-md-flex position-sticky vh-100" style="z-index: 8; top: 0;">
-            <div class="h-50 m-auto border" style="width: 60%;">
-              <div id="serviceImgContainer" class="m-auto overflow-hidden position-relative w-100 h-100" style="width: 100px;">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sectionProject" class="Project container min-vh-100 mb-4 section">
-      <div class="row">
-        <div class="col mb-2">
-          <h1>Project</h1>
-        </div>
-      </div>
-      <div id="rowPortofolio" class="row text-center">
-      </div>
-    </section>
-    <section id="sectionAboutUs" class="min-vh-100 section container-fluid px-0 m-0">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h4>About</h4>
-            <h1>
-              We design and develop web and mobile apps for startups, small
-              and medium businesses
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div class="row p-0 m-0">
-        <div class="col-12 p-0 m-0 position-relative jumbotron overflow-hidden" style="height: 75vh;">
-          <img id="imgAbout" src="./assets/img/about-top.webp" class="position-absolute m-0 vw-100" alt="..." />
-        </div>
-      </div>
-      <div class="container">
-        <div class="row border">
-          <h3>
-            We like to see our clients as partners and we do our best to
-            deliver the product they and their users are 100% satisfied with.
-            Agile principles, ongoing communication, transparency are the
-            cornerstones of each of our projects.
-          </h3>
-          <div class="col-3 border">
-            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-          </div>
-          <div class="col-3 border">
-            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-          </div>
-          <div class="col-3 border">
-            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-          </div>
-          <div class="col-3 border">
-            <img src="./assets/img/logo_dark.png" class="img-fluid" alt="..." />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sectionPemesanan" class="pemesanan container min-vh-100 d-flex section">
-      <div class="my-auto w-100">
-        <h1>Interested? <br> let's talk</h1>
-        <p>Just fill this simple form in and we will contact you promptly to discuss your project. Hate forms? Drop us a line at
-          hello@ronasit.com</p>
-        <h2>Work with us</h2>
-        <form action="">
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="">Nama Pelanggan</label>
-                <input type="text" name="nama_pelanggan" id="" class="form-control" placeholder="Masukan nama">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" name="email_pelanggan" id="" class="form-control" placeholder="Masukan email">
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="">Jenis / Nama Aplikasi</label>
-                <input type="text" name="nama_aplikasi" id="" class="form-control" placeholder="Cth. Aplikasi Parkir">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="">Basis Aplikasi</label><br>
-              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck1">Android</label>
-        
-                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck2">Website</label>
-        
-                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck3">Dekstop</label>
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3 mt-2">
-            <div class="col-md-6">
-              <textarea name="keterangan" id=""  class="form-control" rows="10" placeholder="Keterangan Tambahan"></textarea>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-info">Send Request</button>
-        </form>
-      </div>
-    </section>
-    <section class="section-footer">
-        <footer>
-            <div class="container">
-                <div class="row row-sub-footer">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="wrapper-col-1">
-                            <h1>Dysania Dev</h1>
-                            <p>Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021.
-          Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan
-          pengembangan serta perawatan sistem</p>
-                            <div class="wrapper-icon d-flex">
-                                <div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-                                <i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-                                <i class="fa-brands fa-facebook-f m-auto"></i>
-                                </div>
-                                <div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="wrapper-col-2">
-                            <h1>PERUSAHAAN</h1>
-                            <a href="#">Layanan</a>
-                            <a href="#">Projek</a>
-                            <a href="#">Tentang Kami</a>
-                            <a href="#">Pemesanan</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="wrapper-col-3">
-                            <h1>INFORMASI</h1>
-                            <a href="">Program Kami</a>
-                            <a href="">Review Customer</a>
-                            <a href="">Metode Pembayaran</a>  
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="wrapper-col-4">
-                            <h1>BANTUAN</h1>
-                            <a href="">Laporkan Penyalahgunaan</a>
-                            <a href="">Pengetahuan Dasar</a>
-                            <a href="">Tutorial</a>
-                            <a href="">Artikel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper-last-footer d-flex justify-content-center">
-                    <strong class="m-auto">Copyright &copy; 2023 Dysania Dev</a></strong>
-                </div>
-            </div>
-        </footer>
-    </section>
-  </div>
-  <!-- Sosmed Icon -->
-  <div class="position-fixed ms-2 mb-3 ps-3 d-none d-md-block" style="bottom: 0">
-    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-      <i class="fa-brands fa-instagram"></i>
-    </div>
-    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-      <i class="fa-brands fa-facebook-f m-auto"></i>
-    </div>
-    <div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
-      <i class="fa-brands fa-whatsapp"></i>
-    </div>
-  </div>
-  <!-- End Sosmed Icon -->
-  <script src="app/js/sys.js"></script>
-</body>
-</body>
+									<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+									<label class="btn btn-outline-primary" for="btncheck2">Website</label>
 
+									<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+									<label class="btn btn-outline-primary" for="btncheck3">Dekstop</label>
+								</div>
+							</div>
+						</div>
+						<div class="row mb-3 mt-2">
+							<div class="col-md-6">
+								<textarea name="keterangan" id="" class="form-control" rows="10" placeholder="Keterangan Tambahan"></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-info">Send Request</button>
+					</form>
+				</div>
+			</section>
+			<section class="section-footer">
+				<footer>
+					<div class="container">
+						<div class="row row-sub-footer">
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="wrapper-col-1">
+									<h1>Dysania Dev</h1>
+									<p>Kami telah membantu pelanggan dalam mendesain, mengembangkan, dan merawat aplikasi sejak 2021. Kami berusaha memberikan solusi yang efektif bagi project Anda, melalui tahapan analisis kebutuhan, desain, dan pengembangan serta perawatan sistem</p>
+									<div class="wrapper-icon d-flex">
+										<div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+											<i class="fa-brands fa-instagram"></i>
+										</div>
+										<div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+											<i class="fa-brands fa-facebook-f m-auto"></i>
+										</div>
+										<div class="p-2 rounded-circle mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+											<i class="fa-brands fa-whatsapp"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="wrapper-col-2">
+									<h1>PERUSAHAAN</h1>
+									<a href="#">Layanan</a>
+									<a href="#">Projek</a>
+									<a href="#">Tentang Kami</a>
+									<a href="#">Pemesanan</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="wrapper-col-3">
+									<h1>INFORMASI</h1>
+									<a href="">Program Kami</a>
+									<a href="">Review Customer</a>
+									<a href="">Metode Pembayaran</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-3">
+								<div class="wrapper-col-4">
+									<h1>BANTUAN</h1>
+									<a href="">Laporkan Penyalahgunaan</a>
+									<a href="">Pengetahuan Dasar</a>
+									<a href="">Tutorial</a>
+									<a href="">Artikel</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper-last-footer d-flex justify-content-center">
+							<strong class="m-auto">Copyright &copy; 2023 Dysania Dev</strong>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</div>
+		<!-- Sosmed Icon -->
+		<div class="position-fixed ms-2 mb-3 ps-3 d-none d-md-block" style="bottom: 0">
+			<div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+			<div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+				<i class="fa-brands fa-facebook-f m-auto"></i>
+			</div>
+			<div class="p-2 rounded-circle d-flex mb-1 text-white" style="background: #000; width: 30px; height: 30px">
+				<i class="fa-brands fa-whatsapp"></i>
+			</div>
+		</div>
+		<!-- End Sosmed Icon -->
+		<script src="app/js/sys.js"></script>
+	</body>
 </html>
